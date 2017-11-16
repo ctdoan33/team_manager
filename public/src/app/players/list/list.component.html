@@ -1,0 +1,16 @@
+<table>
+	<thead>
+		<tr>
+			<th>Player Name</th>
+			<th>Preferred Position</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let player of players">
+			<td><a [routerLink]="['/status']">{{player.name}}</a></td>
+			<td>{{player.position}}</td>
+			<td><button (click)="onDelete(player._id)" class="delete">Delete</button></td>
+		</tr>
+	</tbody>
+</table>

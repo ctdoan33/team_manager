@@ -1,0 +1,22 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+table, th, td {
+	border: 1px solid black;
+}
+th, td{
+	padding: 5px;
+}
+th{
+	background-color: gray;
+	text-align: left;
+}
+tr:nth-child(odd){
+	background-color: lightgray;
+}
+.delete{
+	width: 100%;
+	color: white;
+	background-color: red;
+}
